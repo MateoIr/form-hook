@@ -17,14 +17,14 @@ export const FormHook = () => {
   });
 
   
-  const onSubmit33=(data)=>{
+  const onSubmit=(data)=>{
     console.log(data)
   }
   
   return (
 
   
-    <form onSubmit={handleSubmit(onSubmit33)}>
+    <form onSubmit={handleSubmit(onSubmit)}>
       <input type="text" placeholder='Full name...' {...register("fullName")}/><br />
       <p>{errors.fullName?.message}</p>
       <input type="text" placeholder='Email...' {...register("email")}/><br />
